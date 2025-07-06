@@ -9,6 +9,24 @@ public class Main {
     public static void main(String[] args) throws IOException {
         WeightedGraph graph = GraphReader.readGraphFromFile("data/bvg.txt");
 
+
+        // random start and end
+        //Set<String> StaionIDs = graph.getVertices();
+
+        //int rStart = new Random().nextInt(0, StaionIDs.size());
+
+        //List<String> rDestinations = List.of(new Random().nextInt(0, StaionIDs.size());
+
+        //Dijkstra rDijkstra = new Dijkstra(graph);
+
+        //List<String> IDs = new ArrayList<>(StaionIDs);
+        //Map<String, Integer> rDistance = rDijkstra.shortestPath(IDs.get(rStart));
+        //Map<String, String> rNames = getStationNames("data/stations.txt");
+
+
+
+
+
         // start: S Schöneweide
         String start = "060192001006";
 
@@ -44,6 +62,7 @@ public class Main {
         }
 
     }
+
 
     private static Map<String, String> getStationNames(String filePath) throws IOException {
         Map<String, String> names = new HashMap<>();
